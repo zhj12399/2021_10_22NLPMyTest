@@ -1,0 +1,1 @@
+import csvmat = []with open("renmin.txt", "r") as f:  # 打开文件    for line in f:        mat.append([l for l in line.split()])print(mat)with open('renmin.csv', 'w', newline='') as csvfile:    writer = csv.writer(csvfile)    for row in mat:        if len(row) != 0:            writer.writerow(row)
